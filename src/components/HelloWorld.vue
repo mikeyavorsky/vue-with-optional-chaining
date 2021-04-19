@@ -122,11 +122,15 @@
 <script>
 export default {
   name: "HelloWorld",
+  data() {
+    return {
+      other: {
+        message: "testing"
+      }
+    };
+  },
   props: {
-    msg: String,
-    other: {
-      message: "testing"
-    }
+    msg: String
   }
 };
 </script>
