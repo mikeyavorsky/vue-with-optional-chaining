@@ -2,7 +2,8 @@
 module.exports = {
   chainWebpack: config => {
     config.module
-      .rule("vue")
+      .rule("js")
+      .test(/\.js$/)
       .use("babel-loader")
       .loader("babel-loader")
       .tap(options => {
